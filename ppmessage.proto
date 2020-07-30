@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package ppmessage;
 
-option go_package = ".;ppmessage";
+option go_package = "github.com/sukhajata/ppmessage";
 
 message InstMessage {
     string deviceeui = 1;
