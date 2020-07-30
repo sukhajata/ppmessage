@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package ppmessage;
+
+message InstMessage {
+    uint64 timestamp = 1;
+    double activepower = 2;
+    double reactivepower = 3;
+    double current = 4;
+    double voltage = 5;
+    uint32 phaseid = 6;
+}
