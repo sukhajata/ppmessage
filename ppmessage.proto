@@ -2,11 +2,14 @@ syntax = "proto3";
 
 package ppmessage;
 
+option go_package = ".;ppmessage";
+
 message InstMessage {
-    uint64 timestamp = 1;
-    double activepower = 2;
-    double reactivepower = 3;
-    double current = 4;
-    double voltage = 5;
-    uint32 phaseid = 6;
+    string deviceeui = 1;
+    uint64 timestamp = 2;
+    double activepower = 3;
+    double reactivepower = 4;
+    double current = 5;
+    double voltage = 6;
+    uint32 phaseid = 7;
 }
