@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package ppdownlink;
+
+option go_package = "github.com/sukhajata/ppmessage/ppdownlink";
+
+message ConfigDownlinkMessage {
+  string deviceeui = 1;
+  uint32 slot = 2;
+  uint32 index = 3;
+  string firmware = 4;
+  bytes value = 5;
+  uint32 numretries = 6;
+}
+
+message FunctionDownlinkMessage {
+  string deviceeui = 1;
+  uint32 slot = 2;
+  uint32 index = 3;
+  string firmware = 4;
+  bytes param1 = 5;
+  bytes param2 = 6;
+  bytes param3 = 7;
+  bytes param4 = 8;
+}
+
+message ResendRequestMessage {
+  string deviceeui = 1;
+  uint64 timestamp = 2;
+  uint32 messageid = 3;
+  uint32 messagetype = 4;
+  int32 spare = 5;
+  int32 state = 6;
+}
