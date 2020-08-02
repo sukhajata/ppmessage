@@ -6,7 +6,7 @@ option go_package = "github.com/sukhajata/ppmessage/ppuplink";
 
 message AlarmMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
     uint32 phaseid = 3;
     string alarmtype = 4;
     double value = 5;
@@ -14,7 +14,7 @@ message AlarmMessage {
 
 message CircuitEnergyMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
     uint32 circuitnumber = 3;
     double realnetenergy_phase_0 = 4;
     double reactivenetenergy_phase_0 = 5;
@@ -26,7 +26,7 @@ message CircuitEnergyMessage {
 
 message CircuitLoadMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
     uint32 circuitnumber = 3;
     double currentsma_phase_0 = 4;
     double currentsma_phase_1 = 5;
@@ -70,7 +70,7 @@ message ConfigUplinkMessage {
 
 message EnergyMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
     uint32 phaseid = 3;
     double energyexportreactive = 4;
     double energyimportreactive = 5;
@@ -80,28 +80,28 @@ message EnergyMessage {
 
 message GatewayMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
     string gatewayid = 3;
     sint32 rssi = 4;
     sint32 snr = 5;
     double latitude = 6;
     double longitude = 7;
     double altitude = 8;
-    string gatewaytimestamp = 9;
+    string gatewaytimesent = 9;
     uint64 frequency = 10;
     string rawdata = 11;
 }
 
 message GeoscanMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
     string bssid = 3;
     string rssid = 4;
 }
 
 message HarmonicsLowerMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
     double voltage_r = 3;
     double current_r = 4;
     double voltage_w = 5;
@@ -129,7 +129,7 @@ message HarmonicsLowerMessage {
 
 message HarmonicsUpperMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
     double voltage_r = 3;
     double current_r = 4;
     double voltage_w = 5;
@@ -157,7 +157,7 @@ message HarmonicsUpperMessage {
 
 message HVAlarmMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
     string alarmtype = 3;
     double imbalance = 4;
     double voltage_r = 5;
@@ -173,7 +173,7 @@ message HVAlarmMessage {
 
 message InstMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
     uint32 phaseid = 3;
     double activepower = 4;
     double reactivepower = 5;
@@ -183,7 +183,7 @@ message InstMessage {
 
 message InstP2PMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
     double voltage_r = 3;
     double current_r = 4;
     double voltage_w = 5;
@@ -206,7 +206,7 @@ message InstP2PMessage {
 
 message PQMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
     uint32 phaseid = 3;
     double voltagemax = 4;
     double currentmax = 5;
@@ -241,7 +241,7 @@ message PQMessage {
 
 message PQEventsMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
     uint32 phaseid = 3;
     double retainedvoltage = 4;
     uint32 pqeventtype = 5;
@@ -250,7 +250,7 @@ message PQEventsMessage {
 
 message ProcessedMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
     uint32 phaseid = 3;
     double loopimpedance = 4;
     sint32 rssi = 5;
@@ -262,14 +262,14 @@ message ProcessedMessage {
     uint32 sustainedcnt = 11;
     uint32 prolongedcnt = 12;
     int32 mdi = 13;
-    uint64 mditimestamp = 14;
+    uint64 mditimesent = 14;
     double voltageunbalancefactor = 15;
     double stateofhealth = 16;
 }
 
 message ResendResponseMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
     uint32 messageid = 3;
     uint32 messagetype = 4;
     int32 spare = 5;
@@ -279,7 +279,7 @@ message ResendResponseMessage {
 
 message S11PQMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
     uint32 phaseid = 3;
     uint32 address = 4;
     double voltagemax = 5;
@@ -309,12 +309,12 @@ message S11PQMessage {
 
 message TimeSyncRequestMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
 }
 
 message UplinkMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
     sint32 rssi = 3;
     sint32 snr = 4;
     uint64 frequency = 5;
@@ -327,7 +327,7 @@ message UplinkMessage {
 
 message VoltageStatsMessage {
     string deviceeui = 1;
-    uint64 timestamp = 2;
+    uint64 timesent = 2;
     uint32 phaseid = 3;
     double mean = 4;
     double variance = 5;
