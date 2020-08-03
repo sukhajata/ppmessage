@@ -262,7 +262,7 @@ message ProcessedMessage {
     uint32 sustainedcnt = 11;
     uint32 prolongedcnt = 12;
     int32 mdi = 13;
-    uint64 mditimesent = 14;
+    uint64 mditimestamp = 14;
     double voltageunbalancefactor = 15;
     double stateofhealth = 16;
 }
