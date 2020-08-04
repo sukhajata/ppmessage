@@ -318,11 +318,12 @@ message UplinkMessage {
     sint32 rssi = 3;
     sint32 snr = 4;
     uint64 frequency = 5;
-    uint64 fctn = 6;
-    string rawdata = 7;
-    uint32 messageid = 8;
-    uint32 messagetype = 9;
-    uint32 resent = 10;
+    int32 dr = 6;
+    uint64 fctn = 7;
+    string rawdata = 8;
+    uint32 messageid = 9;
+    uint32 messagetype = 10;
+    uint32 resent = 11;
 }
 
 message VoltageStatsMessage {
