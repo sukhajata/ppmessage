@@ -32,3 +32,10 @@ message ResendRequestMessage {
   int32 spare = 5;
   int32 state = 6;
 }
+
+message RelayCommandMessage {
+  string deviceeui = 1;
+  uint64 timesent = 2;
+  uint32 index = 3;
+  uint32 command = 4;
+}
