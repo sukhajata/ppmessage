@@ -361,9 +361,10 @@ message MeterStatusMessage {
     uint64 timesent = 2;
     uint32 modbusaddress = 3;
     int32 digitalinputs = 4;
-    int32 alarmstate1 = 5;
-    int32 alarmstate2 = 6;
-    int32 commsstate1 = 7;
-    int32 commsstate2 = 8;
-    int32 spare1 = 9;
+    int32 digitaloutputs = 5;
+    int32 alarmstate1 = 6;
+    int32 alarmstate2 = 7;
+    int32 commsstate1 = 8;
+    int32 commsstate2 = 9;
+    int32 spare1 = 10;
 }
