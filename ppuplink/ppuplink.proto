@@ -355,3 +355,15 @@ message VoltageStatsMessage {
     int64 h247_249 = 26;
     int64 h249_300 = 27;
 }
+
+message MeterStatusMessage {
+    string deviceeui = 1;
+    uint64 timesent = 2;
+    uint32 modbusaddress = 3;
+    int32 digitalinputs = 4;
+    int32 alarmstate1 = 5;
+    int32 alarmstate2 = 6;
+    int32 commsstate1 = 7;
+    int32 commsstate2 = 8;
+    int32 spare1 = 9;
+}
