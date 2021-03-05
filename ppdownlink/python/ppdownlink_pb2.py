@@ -19,8 +19,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='ppdownlink.proto',
   package='ppdownlink',
   syntax='proto3',
-  serialized_options=_b('Z)github.com/sukhajata/ppmessage/ppdownlink'),
-  serialized_pb=_b('\n\x10ppdownlink.proto\x12\nppdownlink\"|\n\x15\x43onfigDownlinkMessage\x12\x11\n\tdeviceeui\x18\x01 \x01(\t\x12\x0c\n\x04slot\x18\x02 \x01(\r\x12\r\n\x05index\x18\x03 \x01(\r\x12\x10\n\x08\x66irmware\x18\x04 \x01(\t\x12\r\n\x05value\x18\x05 \x01(\x0c\x12\x12\n\nnumretries\x18\x06 \x01(\r\"\x9b\x01\n\x17\x46unctionDownlinkMessage\x12\x11\n\tdeviceeui\x18\x01 \x01(\t\x12\x0c\n\x04slot\x18\x02 \x01(\r\x12\r\n\x05index\x18\x03 \x01(\r\x12\x10\n\x08\x66irmware\x18\x04 \x01(\t\x12\x0e\n\x06param1\x18\x05 \x01(\x0c\x12\x0e\n\x06param2\x18\x06 \x01(\x0c\x12\x0e\n\x06param3\x18\x07 \x01(\x0c\x12\x0e\n\x06param4\x18\x08 \x01(\x0c\"\x81\x01\n\x14ResendRequestMessage\x12\x11\n\tdeviceeui\x18\x01 \x01(\t\x12\x10\n\x08timesent\x18\x02 \x01(\x04\x12\x11\n\tmessageid\x18\x03 \x01(\r\x12\x13\n\x0bmessagetype\x18\x04 \x01(\r\x12\r\n\x05spare\x18\x05 \x01(\x05\x12\r\n\x05state\x18\x06 \x01(\x05\"Z\n\x13RelayCommandMessage\x12\x11\n\tdeviceeui\x18\x01 \x01(\t\x12\x10\n\x08timesent\x18\x02 \x01(\x04\x12\r\n\x05index\x18\x03 \x01(\r\x12\x0f\n\x07\x63ommand\x18\x04 \x01(\rB+Z)github.com/sukhajata/ppmessage/ppdownlinkb\x06proto3')
+  serialized_options=_b('Z@powerpilot.visualstudio.com/PowerPilot/_git/ppmessage/ppdownlink'),
+  serialized_pb=_b('\n\x10ppdownlink.proto\x12\nppdownlink\"|\n\x15\x43onfigDownlinkMessage\x12\x11\n\tdeviceeui\x18\x01 \x01(\t\x12\x0c\n\x04slot\x18\x02 \x01(\r\x12\r\n\x05index\x18\x03 \x01(\r\x12\x10\n\x08\x66irmware\x18\x04 \x01(\t\x12\r\n\x05value\x18\x05 \x01(\x0c\x12\x12\n\nnumretries\x18\x06 \x01(\r\"\x9b\x01\n\x17\x46unctionDownlinkMessage\x12\x11\n\tdeviceeui\x18\x01 \x01(\t\x12\x0c\n\x04slot\x18\x02 \x01(\r\x12\r\n\x05index\x18\x03 \x01(\r\x12\x10\n\x08\x66irmware\x18\x04 \x01(\t\x12\x0e\n\x06param1\x18\x05 \x01(\x0c\x12\x0e\n\x06param2\x18\x06 \x01(\x0c\x12\x0e\n\x06param3\x18\x07 \x01(\x0c\x12\x0e\n\x06param4\x18\x08 \x01(\x0c\"\x81\x01\n\x14ResendRequestMessage\x12\x11\n\tdeviceeui\x18\x01 \x01(\t\x12\x10\n\x08timesent\x18\x02 \x01(\x04\x12\x11\n\tmessageid\x18\x03 \x01(\r\x12\x13\n\x0bmessagetype\x18\x04 \x01(\r\x12\r\n\x05spare\x18\x05 \x01(\x05\x12\r\n\x05state\x18\x06 \x01(\x05\"Z\n\x13RelayCommandMessage\x12\x11\n\tdeviceeui\x18\x01 \x01(\t\x12\x10\n\x08timesent\x18\x02 \x01(\x04\x12\r\n\x05index\x18\x03 \x01(\r\x12\x0f\n\x07\x63ommand\x18\x04 \x01(\r\"\x9a\x02\n\x10MulticastMessage\x12\x0b\n\x03\x63g1\x18\x01 \x01(\r\x12\x0b\n\x03\x63g2\x18\x02 \x01(\r\x12\x0b\n\x03\x63g3\x18\x03 \x01(\r\x12\x0b\n\x03\x63g4\x18\x04 \x01(\r\x12\x0b\n\x03\x63g5\x18\x05 \x01(\r\x12\x0b\n\x03\x63g6\x18\x06 \x01(\r\x12\x0b\n\x03\x63g7\x18\x07 \x01(\r\x12\x0b\n\x03\x63g8\x18\x08 \x01(\r\x12\x0b\n\x03\x63g9\x18\t \x01(\r\x12\x0c\n\x04\x63g10\x18\n \x01(\r\x12\x0c\n\x04\x63g11\x18\x0b \x01(\r\x12\x0c\n\x04\x63g12\x18\x0c \x01(\r\x12\x0c\n\x04\x63g13\x18\r \x01(\r\x12\x0c\n\x04\x63g14\x18\x0e \x01(\r\x12\x0c\n\x04\x63g15\x18\x0f \x01(\r\x12\x0c\n\x04\x63g16\x18\x10 \x01(\r\x12\x0f\n\x07operand\x18\x11 \x01(\r\x12\x0f\n\x07\x63ommand\x18\x12 \x01(\r\x12\r\n\x05value\x18\x13 \x01(\rBBZ@powerpilot.visualstudio.com/PowerPilot/_git/ppmessage/ppdownlinkb\x06proto3')
 )
 
 
@@ -289,10 +289,168 @@ _RELAYCOMMANDMESSAGE = _descriptor.Descriptor(
   serialized_end=538,
 )
 
+
+_MULTICASTMESSAGE = _descriptor.Descriptor(
+  name='MulticastMessage',
+  full_name='ppdownlink.MulticastMessage',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='cg1', full_name='ppdownlink.MulticastMessage.cg1', index=0,
+      number=1, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cg2', full_name='ppdownlink.MulticastMessage.cg2', index=1,
+      number=2, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cg3', full_name='ppdownlink.MulticastMessage.cg3', index=2,
+      number=3, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cg4', full_name='ppdownlink.MulticastMessage.cg4', index=3,
+      number=4, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cg5', full_name='ppdownlink.MulticastMessage.cg5', index=4,
+      number=5, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cg6', full_name='ppdownlink.MulticastMessage.cg6', index=5,
+      number=6, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cg7', full_name='ppdownlink.MulticastMessage.cg7', index=6,
+      number=7, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cg8', full_name='ppdownlink.MulticastMessage.cg8', index=7,
+      number=8, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cg9', full_name='ppdownlink.MulticastMessage.cg9', index=8,
+      number=9, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cg10', full_name='ppdownlink.MulticastMessage.cg10', index=9,
+      number=10, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cg11', full_name='ppdownlink.MulticastMessage.cg11', index=10,
+      number=11, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cg12', full_name='ppdownlink.MulticastMessage.cg12', index=11,
+      number=12, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cg13', full_name='ppdownlink.MulticastMessage.cg13', index=12,
+      number=13, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cg14', full_name='ppdownlink.MulticastMessage.cg14', index=13,
+      number=14, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cg15', full_name='ppdownlink.MulticastMessage.cg15', index=14,
+      number=15, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cg16', full_name='ppdownlink.MulticastMessage.cg16', index=15,
+      number=16, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='operand', full_name='ppdownlink.MulticastMessage.operand', index=16,
+      number=17, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='command', full_name='ppdownlink.MulticastMessage.command', index=17,
+      number=18, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='value', full_name='ppdownlink.MulticastMessage.value', index=18,
+      number=19, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=541,
+  serialized_end=823,
+)
+
 DESCRIPTOR.message_types_by_name['ConfigDownlinkMessage'] = _CONFIGDOWNLINKMESSAGE
 DESCRIPTOR.message_types_by_name['FunctionDownlinkMessage'] = _FUNCTIONDOWNLINKMESSAGE
 DESCRIPTOR.message_types_by_name['ResendRequestMessage'] = _RESENDREQUESTMESSAGE
 DESCRIPTOR.message_types_by_name['RelayCommandMessage'] = _RELAYCOMMANDMESSAGE
+DESCRIPTOR.message_types_by_name['MulticastMessage'] = _MULTICASTMESSAGE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 ConfigDownlinkMessage = _reflection.GeneratedProtocolMessageType('ConfigDownlinkMessage', (_message.Message,), {
@@ -322,6 +480,13 @@ RelayCommandMessage = _reflection.GeneratedProtocolMessageType('RelayCommandMess
   # @@protoc_insertion_point(class_scope:ppdownlink.RelayCommandMessage)
   })
 _sym_db.RegisterMessage(RelayCommandMessage)
+
+MulticastMessage = _reflection.GeneratedProtocolMessageType('MulticastMessage', (_message.Message,), {
+  'DESCRIPTOR' : _MULTICASTMESSAGE,
+  '__module__' : 'ppdownlink_pb2'
+  # @@protoc_insertion_point(class_scope:ppdownlink.MulticastMessage)
+  })
+_sym_db.RegisterMessage(MulticastMessage)
 
 
 DESCRIPTOR._options = None

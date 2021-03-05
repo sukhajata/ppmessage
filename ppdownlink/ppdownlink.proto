@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package ppdownlink;
 
-option go_package = "github.com/sukhajata/ppmessage/ppdownlink";
+option go_package = "powerpilot.visualstudio.com/PowerPilot/_git/ppmessage/ppdownlink";
 
 message ConfigDownlinkMessage {
   string deviceeui = 1;
@@ -38,4 +38,26 @@ message RelayCommandMessage {
   uint64 timesent = 2;
   uint32 index = 3;
   uint32 command = 4;
+}
+
+message MulticastMessage {
+  uint32 cg1 = 1;
+  uint32 cg2 = 2;
+  uint32 cg3 = 3;
+  uint32 cg4 = 4;
+  uint32 cg5 = 5;
+  uint32 cg6 = 6;
+  uint32 cg7 = 7;
+  uint32 cg8 = 8;
+  uint32 cg9 = 9;
+  uint32 cg10 = 10;
+  uint32 cg11 = 11;
+  uint32 cg12 = 12;
+  uint32 cg13 = 13;
+  uint32 cg14 = 14;
+  uint32 cg15 = 15;
+  uint32 cg16 = 16;
+  uint32 operand = 17;
+  uint32 command = 18;
+  uint32 value = 19;
 }

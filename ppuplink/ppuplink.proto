@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package ppuplink;
 
-option go_package = "github.com/sukhajata/ppmessage/ppuplink";
+option go_package = "powerpilot.visualstudio.com/PowerPilot/_git/ppmessage/ppuplink";
 
 message AlarmMessage {
     string deviceeui = 1;
