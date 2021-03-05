@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package ppdownlink;
 
-option go_package = "powerpilot.visualstudio.com/PowerPilot/_git/ppmessage/ppdownlink";
+option go_package = "github.com/sukhajata/ppmessage/ppdownlink";
 
 message ConfigDownlinkMessage {
   string deviceeui = 1;
